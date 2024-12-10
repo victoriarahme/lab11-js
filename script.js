@@ -7,6 +7,9 @@ class productProperties {
         this.quantity = quantity
     }
 
+//PART 3:
+
+// for percentage off of product price
     static applyDiscount = 0.2;
 
     static applyDiscountProducts(products, discount){
@@ -14,7 +17,11 @@ class productProperties {
             product.price = product.price * (1 - discount)
         });
     }
-    
+    //subtracting discount
+    getTotalValueWithDiscount() {
+        const discountedPrice = this.price * (1 - ProductProperties.applyDiscount);
+        return discountedPrice * this.quantity;
+    }
     
     getTotalValue() {
         return this.price * this.quantity;
@@ -42,5 +49,3 @@ console.log(orange.toString());
 
 const milk = new perishableProductProperties('Milk', 2.5, 3, '2024-12-12');
 console.log(milk.toString());
-
-//PART 3:
