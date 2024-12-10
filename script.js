@@ -1,3 +1,4 @@
+//PART 1:
 class productProperties {
 
     constructor(name, price, quantity){
@@ -13,4 +14,10 @@ class productProperties {
     toString() {
         console.log(`name: ${this.name}, Price: ${this.price}, Quantity: ${this.quantity}`);
 }
+}
+
+//PART 2//
+
+class perishableProductProperties extends productProperties {
+     ()
 }
