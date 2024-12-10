@@ -7,12 +7,12 @@ class productProperties {
         this.quantity = quantity
     }
 
-    static applyDiscount = 2;
+    static applyDiscount = 0.2;
 
-    static getDiscount() {
-        return productProperties.applyDiscount;
+    static applyDiscountProducts(products, discount){
+        
     }
-    console.log(productProperties.applyDiscount);
+    
     
     getTotalValue() {
         return this.price * this.quantity;
