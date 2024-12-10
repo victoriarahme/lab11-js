@@ -28,6 +28,8 @@ class perishableProductProperties extends productProperties {
     return `${super.toString()}, Expiration Date: ${this.epirationDate}`;
   }
 }
-const orange = new perishableProductProperties('Orange', 3.5, 10, '2024-12-20');
+const orange = new perishableProductProperties('Orange', 3.5, 10, '2024-12-20'); //3.5 $ per item
 console.log(orange.toString());
 
+const milk = new perishableProductProperties('Milk', 2.5, 3, '2024-12-12');
+console.log(milk.toString());
