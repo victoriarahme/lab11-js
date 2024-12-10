@@ -7,9 +7,9 @@ class productProperties {
         this.quantity = quantity
     }
 
-    static applyDiscount = %2
+    static applyDiscount = 2;
 
-    static applyDiscount() {
+    static getDiscount() {
         return productProperties.applyDiscount;
     }
     console.log(productProperties.applyDiscount);
