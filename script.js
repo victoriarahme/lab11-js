@@ -10,7 +10,10 @@ class productProperties {
     static applyDiscount = 0.2;
 
     static applyDiscountProducts(products, discount){
-        
+        products.array.forEach(product => {
+            
+            
+        });
     }
     
     
