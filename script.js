@@ -6,6 +6,10 @@ class productProperties {
         this.price = price
         this.quantity = quantity
     }
+
+    static applyDiscount() {
+        products, discount
+    }
     
     getTotalValue() {
         return this.price * this.quantity;
@@ -33,3 +37,5 @@ console.log(orange.toString());
 
 const milk = new perishableProductProperties('Milk', 2.5, 3, '2024-12-12');
 console.log(milk.toString());
+
+//PART 3:
