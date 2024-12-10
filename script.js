@@ -7,6 +7,8 @@ class productProperties {
         this.quantity = quantity
     }
 
+    static applyDiscount = %2
+
     static applyDiscount() {
         return productProperties.applyDiscount;
     }
