@@ -8,7 +8,7 @@ class productProperties {
     }
 
     static applyDiscount() {
-        products, discount
+        return {productProperties.applyDiscount
     }
     
     getTotalValue() {
