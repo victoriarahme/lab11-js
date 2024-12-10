@@ -8,8 +8,9 @@ class productProperties {
     }
 
     static applyDiscount() {
-        return {productProperties.applyDiscount
+        return productProperties.applyDiscount;
     }
+    console.log(productProperties.applyDiscount);
     
     getTotalValue() {
         return this.price * this.quantity;
