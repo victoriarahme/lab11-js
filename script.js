@@ -11,8 +11,7 @@ class productProperties {
 
     static applyDiscountProducts(products, discount){
         products.array.forEach(product => {
-            
-            
+            product.price = product.price * (1 - discount)
         });
     }
     
