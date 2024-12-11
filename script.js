@@ -59,7 +59,7 @@ class store {
         this.inventory.push(product);
     }
     displayInventory() {
-        console.log()
+        console.log('inventory:');
         this.inventory.forEach(product => product.displayInfo());
     }
 };
