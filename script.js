@@ -67,3 +67,7 @@ const product1 = newProduct('sugar');
 const product2 = newProduct('tea');
 
 const product3 = newProduct('water');
+const product4 = newProduct('napkins');
+const product5 = newProduct('plate');
+
+const perishableProduct1 = newProduct('apple');
