@@ -59,6 +59,7 @@ class store {
         this.inventory.push(product);
     }
     displayInventory() {
+        console.log()
         this.inventory.forEach(product => product.displayInfo());
     }
 };
@@ -71,3 +72,4 @@ const product4 = newProduct('napkins');
 const product5 = newProduct('plate');
 
 const perishableProduct1 = newProduct('apple');
+const perishableProduct2 = newProduct('cheese');
