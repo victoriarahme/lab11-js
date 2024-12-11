@@ -61,4 +61,6 @@ class store {
     displayInventory() {
         this.inventory.forEach(product => product.displayInfo());
     }
-}
+};
+
+const product1 = newProduct('sugar');
