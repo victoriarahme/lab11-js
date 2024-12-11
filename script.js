@@ -53,6 +53,12 @@ console.log(milk.toString());
 //PART 4//
 class store {
     constructor(inventory){
-        this.inventory
+        this.inventory = [];
+    }
+    addProduct(product) {
+        this.inventory.push(product);
+    }
+    displayInventory() {
+        this.inventory.forEach(product => product.displayInfo());
     }
 }
