@@ -51,18 +51,27 @@ const milk = new perishableProductProperties('Milk', 2.5, 3, '2024-12-12');
 console.log(milk.toString());
 
 //PART 4//
-class store {
-    constructor(inventory){
-        this.inventory = [];
+class Product {
+    constructor(name) {
+        this.name = name;
     }
-    addProduct(product) {
-        this.inventory.push(product);
+
+    displayInfo() {
+        console.log(`Product: ${this.name}`);
     }
-    displayInventory() {
-        console.log('inventory:');
-        this.inventory.forEach(product => product.displayInfo());
+}
+
+class PerishableProduct extends Product {
+    constructor(name, expiryDate) {
+        super(name);  // Call the parent class constructor
+        this.expiryDate = expiryDate;
     }
-};
+
+    displayInfo() {
+        console.log(`Perishable Product: ${this.name}, Expiry Date: ${this.expiryDate}`);
+    }
+}
+
 
 const product1 = newProduct('sugar');
 const product2 = newProduct('tea');
@@ -73,3 +82,17 @@ const product5 = newProduct('plate');
 
 const perishableProduct1 = newProduct('apple');
 const perishableProduct2 = newProduct('cheese');
+
+const myStore = new Store();
+
+// Adding products to the store's inventory
+myStore.addProduct(product1);
+myStore.addProduct(product2);
+myStore.addProduct(product3);
+myStore.addProduct(product4);
+myStore.addProduct(product5);
+myStore.addProduct(perishableProduct1);
+myStore.addProduct(perishableProduct2);
+
+// Displaying the inventory
+myStore.displayInventory();
