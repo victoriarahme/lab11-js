@@ -66,3 +66,4 @@ class store {
 const product1 = newProduct('sugar');
 const product2 = newProduct('tea');
 
+const product3 = newProduct('water');
